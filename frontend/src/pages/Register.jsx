@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../axiosConfig';
 
 const Register = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', password: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', password: '', role: 'mentee' });
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -42,6 +42,18 @@ const Register = () => {
           onChange={(e) => setFormData({ ...formData, password: e.target.value })}
           className="w-full mb-4 p-2 border rounded"
         />
+        <input type='radio'
+          name='role' 
+          value='mentee' 
+          checked={formData.role === 'mentee'}
+          onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+        />Mentee
+        <input type='radio' 
+          name='role' 
+          value='mentor' 
+          checked={formData.role === 'mentor'}
+          onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+        />Mentor
         <button type="submit" className="w-full bg-green-600 text-white p-2 rounded">
           Register
         </button>
