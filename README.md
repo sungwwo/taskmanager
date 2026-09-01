@@ -1,19 +1,36 @@
-**Task Manager Application Overview:The task manager application is designed to help users efficiently manage their tasks and responsibilities by providing a user-friendly interface for creating, viewing, updating, and deleting tasks. It includes essential features such as secure user authentication, allowing individuals to sign up and log in to their accounts, as well as profile management to update personal information. With built-in validation such as input field validation and email validation, the application ensures a seamless user experience while enhancing productivity and organization in both personal and professional settings. **
+# Academia
 
-**This apps **contain** the following features:**
+## Implemented Features
+- User registration
+- Mentor / Mentee role selection
+- Login / Logout
+- Profile viewing
+- Profile updating
+- Role-based Mentor / Mentee profile display
 
-* Signup
-* Login
-* Logout
-* Update profile
-* Add tasks
-* View tasks
-* Update tasks
-* Delete tasks
+## Setup
+- Node.js
+- npm install / npm run install-all
+- MongoDB Atlas
+- backend/.env
+- npm start
 
-**This **app**lication** is**almost **a** precompiled** app**. However, students will develop some features,**such as adding tasks, viewing tasks, updating tasks, and **deleting** tasks**. **Students** will interact with GitHub when they develop the features.**
+## Architecture Summary
+- Frontend: React
+- Backend: Node.js + Express
+- Database: MongoDB Atlas
+- Authentication: JWT
+- Deployment: AWS EC2
+- Frontend port: 3000
+- Backend port: 5001
 
----
+## Known Limitations
+- The login session is not preserved after refreshing the page.
+- The current implementation supports only a limited set of features.
+
+## Deployment
+- AWS EC2
+- Public URL: http://3.27.205.210:3000
 
 **Prerequisite:** Please install the following software and create account in following web tools** **
 
